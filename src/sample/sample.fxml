@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<GridPane alignment="center" hgap="10" prefHeight="669.0" prefWidth="976.0" style="-fx-background-color: #43896C;" vgap="10" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <AnchorPane fx:id="Luxray" prefHeight="200.0" prefWidth="299.0" style="-fx-background-color: #4DC694;" onMouseEntered="#fondo" >
+         <children>
+            <Label layoutX="23.0" layoutY="14.0" text="Luxray" />
+            <Label layoutX="231.0" layoutY="14.0" text="Nv 74" />
+            <ImageView fitHeight="95.0" fitWidth="200.0" layoutX="40.0" layoutY="31.0" pickOnBounds="true" preserveRatio="true" />
+            <ProgressBar fx:id="barra1" layoutX="59.0" layoutY="126.0" prefHeight="18.0" prefWidth="190.0" progress="0.0" />
+            <ProgressBar fx:id="barra2" layoutX="59.0" layoutY="126.0" prefHeight="18.0" prefWidth="190.0" progress="1.0" />
+            <Label layoutX="47.0" layoutY="153.0" text="250/" />
+            <Label layoutX="72.0" layoutY="153.0" text="250" />
+         </children>
+      </AnchorPane>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="2">
+         <children>
+            <Label layoutX="31.0" layoutY="27.0" text="Elegir un Pokemon." />
+         </children>
+      </AnchorPane>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="2">
+         <children>
+            <Label layoutX="172.0" layoutY="27.0" text="Salir" />
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="Darkrai" layoutX="68.0" layoutY="120.0" prefHeight="200.0" prefWidth="299.0" GridPane.columnIndex="1" >
+         <children>
+            <Label layoutX="23.0" layoutY="14.0" text="Darkrai" />
+            <Label layoutX="231.0" layoutY="14.0" text="Nv 74" />
+            <ImageView fitHeight="95.0" fitWidth="200.0" layoutX="40.0" layoutY="31.0" pickOnBounds="true" preserveRatio="true" />
+            <ProgressBar fx:id="barra11" layoutX="59.0" layoutY="126.0" prefHeight="18.0" prefWidth="190.0" progress="0.0" />
+            <ProgressBar fx:id="barra21" layoutX="59.0" layoutY="126.0" prefHeight="18.0" prefWidth="190.0" progress="1.0" />
+            <Label layoutX="47.0" layoutY="144.0" text="500/" />
+            <Label layoutX="72.0" layoutY="144.0" text="500" />
+         </children>
+      </AnchorPane>
+   </children>
+   <columnConstraints>
+      <ColumnConstraints minWidth="280.0" prefWidth="100.0" />
+      <ColumnConstraints minWidth="280.0" prefWidth="100.0" />
+      <ColumnConstraints minWidth="280.0" prefWidth="100.0" />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints minHeight="180.0" prefHeight="30.0" />
+      <RowConstraints minHeight="180.0" prefHeight="30.0" />
+      <RowConstraints minHeight="70.0" prefHeight="30.0" />
+   </rowConstraints>
+</GridPane>
