@@ -3,18 +3,148 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.image.*?>
 <?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
 
 <GridPane alignment="center" hgap="10" prefHeight="669.0" prefWidth="976.0" style="-fx-background-color: #43896C;" vgap="10" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
    <children>
-      <AnchorPane fx:id="Luxray" prefHeight="200.0" prefWidth="299.0" style="-fx-background-color: #4DC694;" onMouseEntered="#fondo" >
+      <AnchorPane fx:id="Luxray" onMouseClicked="#click" prefHeight="200.0" prefWidth="299.0" style="-fx-background-color: #4DC694;">
          <children>
-            <Label layoutX="23.0" layoutY="14.0" text="Luxray" />
-            <Label layoutX="231.0" layoutY="14.0" text="Nv 74" />
+            <Label layoutX="23.0" layoutY="14.0" text="Luxray">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font></Label>
+            <Label layoutX="231.0" layoutY="14.0" text="Nv 74">
+               <font>
+                  <Font name="System Bold Italic" size="12.0" />
+               </font></Label>
             <ImageView fitHeight="95.0" fitWidth="200.0" layoutX="40.0" layoutY="31.0" pickOnBounds="true" preserveRatio="true" />
             <ProgressBar fx:id="barra1" layoutX="59.0" layoutY="126.0" prefHeight="18.0" prefWidth="190.0" progress="0.0" />
             <ProgressBar fx:id="barra2" layoutX="59.0" layoutY="126.0" prefHeight="18.0" prefWidth="190.0" progress="1.0" />
             <Label layoutX="47.0" layoutY="153.0" text="250/" />
             <Label layoutX="72.0" layoutY="153.0" text="250" />
+            <Label layoutX="46.0" layoutY="126.0" prefHeight="18.0" prefWidth="20.0" style="-fx-background-color: #585858;" text="PS" textFill="#ddb628">
+               <font>
+                  <Font name="Arial Black" size="12.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="Darkrai" layoutX="68.0" layoutY="120.0" prefHeight="200.0" prefWidth="299.0" style="-fx-background-color: #4DC694;" GridPane.columnIndex="1" onMouseClicked="#click2">
+         <children>
+            <Label layoutX="23.0" layoutY="14.0" text="Darkrai">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font></Label>
+            <Label layoutX="231.0" layoutY="14.0" text="Nv 92">
+               <font>
+                  <Font name="System Bold Italic" size="12.0" />
+               </font></Label>
+            <ImageView fitHeight="95.0" fitWidth="200.0" layoutX="40.0" layoutY="31.0" pickOnBounds="true" preserveRatio="true" />
+            <ProgressBar fx:id="barra11" layoutX="59.0" layoutY="126.0" prefHeight="18.0" prefWidth="190.0" progress="0.0" />
+            <ProgressBar fx:id="barra21" layoutX="59.0" layoutY="126.0" prefHeight="18.0" prefWidth="190.0" progress="1.0" />
+            <Label layoutX="47.0" layoutY="144.0" text="500/" />
+            <Label layoutX="72.0" layoutY="144.0" text="500" />
+            <Label layoutX="49.0" layoutY="126.0" prefHeight="18.0" prefWidth="20.0" style="-fx-background-color: #585858;" text="PS" textFill="#ddb628">
+               <font>
+                  <Font name="Arial Black" size="12.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="Garchomp" layoutX="358.0" layoutY="120.0" prefHeight="200.0" prefWidth="299.0" style="-fx-background-color: #4DC694;" GridPane.columnIndex="2" onMouseClicked="#click3">
+         <children>
+            <Label layoutX="23.0" layoutY="14.0" text="Garchomp">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Label>
+            <Label layoutX="231.0" layoutY="14.0" text="Nv 86">
+               <font>
+                  <Font name="System Bold Italic" size="12.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="95.0" fitWidth="200.0" layoutX="40.0" layoutY="31.0" pickOnBounds="true" preserveRatio="true" />
+            <ProgressBar fx:id="barra111" layoutX="59.0" layoutY="126.0" prefHeight="18.0" prefWidth="190.0" progress="0.0" />
+            <ProgressBar fx:id="barra211" layoutX="59.0" layoutY="126.0" prefHeight="18.0" prefWidth="190.0" progress="1.0" />
+            <Label layoutX="47.0" layoutY="144.0" text="320" />
+            <Label layoutX="72.0" layoutY="144.0" text="320" />
+            <Label layoutX="49.0" layoutY="126.0" prefHeight="18.0" prefWidth="20.0" style="-fx-background-color: #585858;" text="PS" textFill="#ddb628">
+               <font>
+                  <Font name="Arial Black" size="12.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="Groudon" layoutX="68.0" layoutY="120.0" prefHeight="200.0" prefWidth="299.0" style="-fx-background-color: #4DC694;" GridPane.rowIndex="1" onMouseClicked="#click4">
+         <children>
+            <Label layoutX="23.0" layoutY="14.0" text="Groudon">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Label>
+            <Label layoutX="231.0" layoutY="14.0" text="Nv 90">
+               <font>
+                  <Font name="System Bold Italic" size="12.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="95.0" fitWidth="200.0" layoutX="40.0" layoutY="31.0" pickOnBounds="true" preserveRatio="true" />
+            <ProgressBar fx:id="barra1111" layoutX="59.0" layoutY="126.0" prefHeight="18.0" prefWidth="190.0" progress="0.0" />
+            <ProgressBar fx:id="barra2111" layoutX="59.0" layoutY="126.0" prefHeight="18.0" prefWidth="190.0" progress="1.0" />
+            <Label layoutX="47.0" layoutY="144.0" text="500/" />
+            <Label layoutX="72.0" layoutY="144.0" text="500" />
+            <Label layoutX="49.0" layoutY="126.0" prefHeight="18.0" prefWidth="20.0" style="-fx-background-color: #585858;" text="PS" textFill="#ddb628">
+               <font>
+                  <Font name="Arial Black" size="12.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="Kyurem" layoutX="68.0" layoutY="310.0" prefHeight="200.0" prefWidth="299.0" style="-fx-background-color: #4DC694;" GridPane.columnIndex="1" GridPane.rowIndex="1" onMouseClicked="#click5">
+         <children>
+            <Label layoutX="23.0" layoutY="14.0" text="Kyurem">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Label>
+            <Label layoutX="231.0" layoutY="14.0" text="Nv 75">
+               <font>
+                  <Font name="System Bold Italic" size="12.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="95.0" fitWidth="200.0" layoutX="40.0" layoutY="31.0" pickOnBounds="true" preserveRatio="true" />
+            <ProgressBar fx:id="barra11111" layoutX="59.0" layoutY="126.0" prefHeight="18.0" prefWidth="190.0" progress="0.0" />
+            <ProgressBar fx:id="barra21111" layoutX="59.0" layoutY="126.0" prefHeight="18.0" prefWidth="190.0" progress="1.0" />
+            <Label layoutX="47.0" layoutY="144.0" text="500/" />
+            <Label layoutX="72.0" layoutY="144.0" text="500" />
+            <Label layoutX="49.0" layoutY="126.0" prefHeight="18.0" prefWidth="20.0" style="-fx-background-color: #585858;" text="PS" textFill="#ddb628">
+               <font>
+                  <Font name="Arial Black" size="12.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="Swampert" layoutX="68.0" layoutY="310.0" prefHeight="200.0" prefWidth="299.0" style="-fx-background-color: #4DC694;" GridPane.columnIndex="2" GridPane.rowIndex="1" onMouseClicked="#click6">
+         <children>
+            <Label layoutX="23.0" layoutY="14.0" text="Swampert">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Label>
+            <Label layoutX="231.0" layoutY="14.0" text="Nv 81">
+               <font>
+                  <Font name="System Bold Italic" size="12.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="95.0" fitWidth="200.0" layoutX="40.0" layoutY="31.0" pickOnBounds="true" preserveRatio="true" />
+            <ProgressBar fx:id="barra11112" layoutX="59.0" layoutY="126.0" prefHeight="18.0" prefWidth="190.0" progress="0.0" />
+            <ProgressBar fx:id="barra21112" layoutX="59.0" layoutY="126.0" prefHeight="18.0" prefWidth="190.0" progress="1.0" />
+            <Label layoutX="47.0" layoutY="144.0" text="500/" />
+            <Label layoutX="72.0" layoutY="144.0" text="500" />
+            <Label layoutX="49.0" layoutY="126.0" prefHeight="18.0" prefWidth="20.0" style="-fx-background-color: #585858;" text="PS" textFill="#ddb628">
+               <font>
+                  <Font name="Arial Black" size="12.0" />
+               </font>
+            </Label>
          </children>
       </AnchorPane>
       <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="2">
@@ -25,17 +155,6 @@
       <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="2">
          <children>
             <Label layoutX="172.0" layoutY="27.0" text="Salir" />
-         </children>
-      </AnchorPane>
-      <AnchorPane fx:id="Darkrai" layoutX="68.0" layoutY="120.0" prefHeight="200.0" prefWidth="299.0" GridPane.columnIndex="1" >
-         <children>
-            <Label layoutX="23.0" layoutY="14.0" text="Darkrai" />
-            <Label layoutX="231.0" layoutY="14.0" text="Nv 74" />
-            <ImageView fitHeight="95.0" fitWidth="200.0" layoutX="40.0" layoutY="31.0" pickOnBounds="true" preserveRatio="true" />
-            <ProgressBar fx:id="barra11" layoutX="59.0" layoutY="126.0" prefHeight="18.0" prefWidth="190.0" progress="0.0" />
-            <ProgressBar fx:id="barra21" layoutX="59.0" layoutY="126.0" prefHeight="18.0" prefWidth="190.0" progress="1.0" />
-            <Label layoutX="47.0" layoutY="144.0" text="500/" />
-            <Label layoutX="72.0" layoutY="144.0" text="500" />
          </children>
       </AnchorPane>
    </children>
