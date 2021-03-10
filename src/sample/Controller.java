@@ -21,6 +21,8 @@ public class Controller {
     AnchorPane Kyurem;
     @FXML
     AnchorPane Swampert;
+    @FXML
+    AnchorPane mochila;
 
     public void limpio(){
         Torterra.setStyle("-fx-background-color: null;");
@@ -65,7 +67,6 @@ public class Controller {
 
 
     public void Mochila(MouseEvent mouseEvent) {
-
-
+        mochila.setStyle("-fx-background-color: #2DBC36;");
     }
 }
