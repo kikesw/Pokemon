@@ -10,7 +10,7 @@ public class Controller {
 
 
     @FXML
-    AnchorPane Luxray;
+    AnchorPane Torterra;
     @FXML
     AnchorPane Darkrai;
     @FXML
@@ -22,60 +22,50 @@ public class Controller {
     @FXML
     AnchorPane Swampert;
 
+    public void limpio(){
+        Torterra.setStyle("-fx-background-color: null;");
+        Darkrai.setStyle("-fx-background-color: null;");
+        Garchomp.setStyle("-fx-background-color: null;");
+        Groudon.setStyle("-fx-background-color: null;");
+        Kyurem.setStyle("-fx-background-color: null;");
+        Swampert.setStyle("-fx-background-color: null;");
+    }
 
 
     public void click(MouseEvent mouseEvent) {
-        Luxray.setStyle("-fx-background-color: #2DBC36;");
-        Darkrai.setStyle("-fx-background-color: #4DC694;");
-        Garchomp.setStyle("-fx-background-color: #4DC694;");
-        Groudon.setStyle("-fx-background-color: #4DC694;");
-        Kyurem.setStyle("-fx-background-color: #4DC694;");
-        Swampert.setStyle("-fx-background-color: #4DC694;");
+        limpio();
+        Torterra.setStyle("-fx-background-color: #2DBC36;");
     }
 
 
     public void click2(MouseEvent mouseEvent) {
-        Luxray.setStyle("-fx-background-color: #4DC694;");
+        limpio();
         Darkrai.setStyle("-fx-background-color: #2DBC36;");
-        Garchomp.setStyle("-fx-background-color: #4DC694;");
-        Groudon.setStyle("-fx-background-color: #4DC694;");
-        Kyurem.setStyle("-fx-background-color: #4DC694;");
-        Swampert.setStyle("-fx-background-color: #4DC694;");
     }
 
     public void click3(MouseEvent mouseEvent) {
-        Luxray.setStyle("-fx-background-color: #4DC694;");
-        Darkrai.setStyle("-fx-background-color: #4DC694;");
+        limpio();
         Garchomp.setStyle("-fx-background-color: #2DBC36;");
-        Groudon.setStyle("-fx-background-color: #4DC694;");
-        Kyurem.setStyle("-fx-background-color: #4DC694;");
-        Swampert.setStyle("-fx-background-color: #4DC694;");
     }
 
     public void click4(MouseEvent mouseEvent) {
-        Luxray.setStyle("-fx-background-color: #4DC694;");
-        Darkrai.setStyle("-fx-background-color: #4DC694;");
-        Garchomp.setStyle("-fx-background-color: #4DC694;");
+        limpio();
         Groudon.setStyle("-fx-background-color: #2DBC36;");
-        Kyurem.setStyle("-fx-background-color: #4DC694;");
-        Swampert.setStyle("-fx-background-color: #4DC694;");
     }
 
     public void click5(MouseEvent mouseEvent) {
-        Luxray.setStyle("-fx-background-color: #4DC694;");
-        Darkrai.setStyle("-fx-background-color: #4DC694;");
-        Garchomp.setStyle("-fx-background-color: #4DC694;");
-        Groudon.setStyle("-fx-background-color: #4DC694;");
+        limpio();
         Kyurem.setStyle("-fx-background-color: #2DBC36;");
-        Swampert.setStyle("-fx-background-color: #4DC694;");
     }
 
     public void click6(MouseEvent mouseEvent) {
-        Luxray.setStyle("-fx-background-color: #4DC694;");
-        Darkrai.setStyle("-fx-background-color: #4DC694;");
-        Garchomp.setStyle("-fx-background-color: #4DC694;");
-        Groudon.setStyle("-fx-background-color: #4DC694;");
-        Kyurem.setStyle("-fx-background-color: #4DC694;");
+        limpio();
         Swampert.setStyle("-fx-background-color: #2DBC36;");
+    }
+
+
+    public void Mochila(MouseEvent mouseEvent) {
+
+
     }
 }
