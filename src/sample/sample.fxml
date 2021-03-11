@@ -159,22 +159,32 @@
             </Label>
          </children>
       </AnchorPane>
-      <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="2" fx:id="mochila">
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="2">
          <children>
-            <Label layoutX="32.0" layoutY="26.0" onMouseClicked="#Mochila" text="Mochila" >
+            <Button fx:id="mochila" mnemonicParsing="false" onMouseClicked="#siguiente" prefHeight="70.0" prefWidth="281.0" style="-fx-background-color: #4DC694;" text="Mochila" onMouseEntered="#siguiente2" onMouseExited="#siguiente3">
                <font>
                   <Font name="Gill Sans Ultra Bold" size="15.0" />
-               </font></Label>
+               </font>
+            </Button>
          </children>
       </AnchorPane>
       <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="2">
          <children>
-            <Label layoutX="176.0" layoutY="22.0" text="Salir">
+            <Button mnemonicParsing="false" prefHeight="70.0" prefWidth="280.0" style="-fx-background-color: #4DC694;" text="Salir" fx:id="Salida" onMouseClicked="#Salir" onMouseEntered="#Salir2" onMouseExited="#Salir3">
                <font>
                   <Font name="Gill Sans Ultra Bold" size="15.0" />
-               </font></Label>
+               </font>
+            </Button>
          </children>
       </AnchorPane>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
+         <children>
+            <Button layoutX="-1.0" mnemonicParsing="false" prefHeight="70.0" prefWidth="280.0" style="-fx-background-color: #4DC694;" text="Cancelar Seleccionado" fx:id="cancelacion" onMouseClicked="#cancelar" onMouseEntered="#cancelar2" onMouseExited="#cancelar3">
+               <font>
+                  <Font name="Gill Sans Ultra Bold" size="15.0" />
+               </font>
+            </Button>
+         </children></AnchorPane>
    </children>
    <columnConstraints>
       <ColumnConstraints minWidth="280.0" prefWidth="100.0" />
