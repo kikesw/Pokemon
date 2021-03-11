@@ -31,7 +31,7 @@
                <font>
                   <Font name="Gill Sans Ultra Bold" size="12.0" />
                </font></Label>
-            <ImageView fx:id="pocion2" fitHeight="25.0" fitWidth="31.0" layoutX="2.0" layoutY="13.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fx:id="pocion2" fitHeight="25.0" fitWidth="31.0" layoutX="2.0" layoutY="13.0" onMouseClicked="#superpocion" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../pokemon/pequeña.png" />
                </image>
@@ -44,7 +44,7 @@
                <font>
                   <Font name="Gill Sans Ultra Bold" size="13.0" />
                </font></Label>
-            <ImageView fx:id="pocion3" fitHeight="25.0" fitWidth="25.0" layoutX="14.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fx:id="pocion3" fitHeight="25.0" fitWidth="25.0" layoutX="14.0" layoutY="20.0" onMouseClicked="#hiperpocion" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../pokemon/max.png" />
                </image>
@@ -57,13 +57,16 @@
                <font>
                   <Font name="Gill Sans Ultra Bold" size="12.0" />
                </font></Label>
-            <ImageView fx:id="pocion4" fitHeight="39.0" fitWidth="48.0" layoutX="1.0" layoutY="11.0" pickOnBounds="true">
+            <ImageView fx:id="pocion4" fitHeight="39.0" fitWidth="48.0" layoutX="1.0" layoutY="11.0" onMouseClicked="#Maximapo" pickOnBounds="true">
                <image>
                   <Image url="@../pokemon/revivir.png" />
                </image>
             </ImageView>
          </children>
       </AnchorPane>
-      <Button layoutX="127.0" layoutY="356.0" mnemonicParsing="false" prefHeight="73.0" prefWidth="257.0" text="Button" />
+      <Button fx:id="regreso" layoutX="61.0" layoutY="379.0" mnemonicParsing="false" onMouseClicked="#volver" onMouseEntered="#volver2" onMouseExited="#volver3" prefHeight="59.0" prefWidth="216.0" style="-fx-background-color: transparent;" text="Volver">
+         <font>
+            <Font name="Gill Sans Ultra Bold" size="20.0" />
+         </font></Button>
    </children>
 </AnchorPane>
