@@ -5,11 +5,14 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.scene.control.*;
 import javafx.scene.control.Button;
+import javafx.scene.image.Image;
 import javafx.scene.control.Label;
+import javafx.scene.image.ImageView;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
 import javafx.stage.StageStyle;
+
 
 
 public class Controller {
@@ -28,19 +31,22 @@ public class Controller {
     @FXML
     ProgressBar barra1,barra2,barra3,barra4,barra5,barra6;
     @FXML
-    Button Salida,mochila,cancelacion;
+    Button Salida,mochila,cancelacion,detallesP;
+    @FXML
+    Image imagen1, imagen2, imagen3, imagen4,imagen5,imagen6;
 
     int vidamodificada;
     int llevarDatos;
     ProgressBar llevarbar;
     Label llevarvida;
+    com.sun.prism.Image llevarimagen;
 
-    Pokemon p1 = new Pokemon(300,74,"Torterra",150);
-    Pokemon p2 = new Pokemon(500,92,"Darkrai",250);
-    Pokemon p3 = new Pokemon(300,86,"Garchomp",150);
-    Pokemon p4 = new Pokemon(600,90,"Groudon",300);
-    Pokemon p5 = new Pokemon(500,75,"Kyurem",250);
-    Pokemon p6 = new Pokemon(400,81,"Swampert",200);
+    Pokemon p1 = new Pokemon(300,74,"Torterra",150,"Pokemon tipo tierra");
+    Pokemon p2 = new Pokemon(500,92,"Darkrai",250,"Pokemon legendario tipo fantasma");
+    Pokemon p3 = new Pokemon(300,86,"Garchomp",150,"Pokemon semilegendario");
+    Pokemon p4 = new Pokemon(600,90,"Groudon",300,"Pokemon legendario tipo tierra");
+    Pokemon p5 = new Pokemon(500,75,"Kyurem",250,"Pokemon legendario hielo dragon");
+    Pokemon p6 = new Pokemon(400,81,"Swampert",200,"Pokemon tipo tierra");
 
 
 
@@ -57,7 +63,6 @@ public class Controller {
         //barra1.setProgress(0.8);
 
     }
-
 
 
     public void estadisticas(Pokemon pokemones, Label nombre, Label nivel, Label vida, Label vidacurada){
@@ -81,6 +86,7 @@ public class Controller {
     public void click(MouseEvent mouseEvent) {
         limpio();
         Torterra.setStyle("-fx-background-color: #2DBC36;");
+        detallesP.setDisable(false);
         llevarDatos = p1.Vidacurada;
         llevarbar = barra1;
         llevarvida = cura1;
@@ -91,6 +97,7 @@ public class Controller {
     public void click2(MouseEvent mouseEvent) {
         limpio();
         Darkrai.setStyle("-fx-background-color: #2DBC36;");
+        detallesP.setDisable(false);
         llevarDatos = p2.Vidacurada;
         llevarbar = barra2;
         llevarvida = cura2;
@@ -100,6 +107,7 @@ public class Controller {
     public void click3(MouseEvent mouseEvent) {
         limpio();
         Garchomp.setStyle("-fx-background-color: #2DBC36;");
+        detallesP.setDisable(false);
         llevarDatos = p3.Vidacurada;
         llevarbar = barra3;
         llevarvida = cura3;
@@ -109,6 +117,7 @@ public class Controller {
     public void click4(MouseEvent mouseEvent) {
         limpio();
         Groudon.setStyle("-fx-background-color: #2DBC36;");
+        detallesP.setDisable(false);
         llevarDatos = p4.Vidacurada;
         llevarbar = barra4;
         llevarvida = cura4;
@@ -118,6 +127,7 @@ public class Controller {
     public void click5(MouseEvent mouseEvent) {
         limpio();
         Kyurem.setStyle("-fx-background-color: #2DBC36;");
+        detallesP.setDisable(false);
         llevarDatos = p5.Vidacurada;
         llevarbar = barra5;
         llevarvida = cura5;
@@ -127,6 +137,7 @@ public class Controller {
     public void click6(MouseEvent mouseEvent) {
         limpio();
         Swampert.setStyle("-fx-background-color: #2DBC36;");
+        detallesP.setDisable(false);
         llevarDatos = p6.Vidacurada;
         llevarbar = barra6;
         llevarvida = cura6;
@@ -188,5 +199,22 @@ public class Controller {
 
     public void cancelar3(MouseEvent mouseEvent) {
         cancelacion.setStyle("-fx-background-color: #4DC694;");
+    }
+
+    public void Detalles(MouseEvent mouseEvent) {
+        try {
+            Stage stage = new Stage();
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("Pokedex.fxml"));
+            AnchorPane root = (AnchorPane) loader.load();
+            Scene scene = new Scene(root, 600, 480);
+            stage.setScene(scene);
+            stage.initStyle(StageStyle.UNDECORATED);
+            stage.show();
+            Pokedex pokedex = loader.getController();
+            pokedex.mandardetalles(llevarDatos,llevarvida, llevarimagen,this);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+
     }
 }

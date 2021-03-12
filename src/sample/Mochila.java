@@ -25,7 +25,7 @@ public class Mochila {
     Button regreso;
     @FXML
 
-    int vidaTotal;
+    double vidaTotal;
     Controller controller;
     int datos;
     ProgressBar bar;
@@ -60,23 +60,23 @@ public class Mochila {
         datos = datos+20;
         vida.setText(String.valueOf(datos));
         double progreso = bar.getProgress();
-        double valor = (1000/vidaTotal);
+        double valor = (2000/vidaTotal);
         double accion = progreso+(valor/100);
         bar.setProgress(accion);
     }
 
     public void hiperpocion(MouseEvent mouseEvent) {
-        datos = datos+1;
+        datos = datos+((int)(datos*0.1));
         vida.setText(String.valueOf(datos));
     }
 
     public void Maximapo(MouseEvent mouseEvent) {
-        datos = datos+1;
+        datos = datos+((int)(datos*0.2));
         vida.setText(String.valueOf(datos));
     }
 
     @FXML
-    public void mandarInfoDesdeVentana1(int datos, ProgressBar bar,Label vida, int vidaTotal, Controller controller) {
+    public void mandarInfoDesdeVentana1(int datos, ProgressBar bar,Label vida, double vidaTotal, Controller controller) {
         this.datos=datos;
         this.bar=bar;
         this.vida=vida;

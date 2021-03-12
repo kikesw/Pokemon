@@ -19,7 +19,7 @@
                </font></Label>
             <ImageView fitHeight="102.0" fitWidth="143.0" layoutX="74.0" layoutY="24.0" pickOnBounds="true">
                <image>
-                  <Image url="@../pokemon/Torterra.png" />
+                  <Image fx:id="imagen1" url="@../pokemon/Torterra.png" />
                </image></ImageView>
             <ProgressBar fx:id="barra1" layoutX="59.0" layoutY="126.0" prefHeight="18.0" prefWidth="190.0" progress="0.5" style="-fx-accent: #17FF00;" />
             <Label fx:id="vidatotal1" layoutX="46.0" layoutY="145.0" text="250" />
@@ -44,7 +44,7 @@
                </font></Label>
             <ImageView fitHeight="95.0" fitWidth="143.0" layoutX="83.0" layoutY="31.0" pickOnBounds="true">
                <image>
-                  <Image url="@../pokemon/Darkrai.png" />
+                  <Image fx:id="imagen2" url="@../pokemon/Darkrai.png" />
                </image></ImageView>
             <ProgressBar fx:id="barra2" layoutX="59.0" layoutY="126.0" prefHeight="18.0" prefWidth="190.0" progress="0.5" style="-fx-accent: #17FF00;" />
             <Label fx:id="vidatotal2" layoutX="47.0" layoutY="144.0" text="500" />
@@ -71,7 +71,7 @@
             </Label>
             <ImageView fitHeight="95.0" fitWidth="143.0" layoutX="69.0" layoutY="31.0" pickOnBounds="true">
                <image>
-                  <Image url="@../pokemon/Garchomp.png" />
+                  <Image fx:id="imagen3" url="@../pokemon/Garchomp.png" />
                </image></ImageView>
             <ProgressBar fx:id="barra3" layoutX="59.0" layoutY="126.0" prefHeight="18.0" prefWidth="190.0" progress="0.5" style="-fx-accent: #17FF00;" />
             <Label fx:id="vidatotal3" layoutX="47.0" layoutY="144.0" text="320" />
@@ -98,7 +98,7 @@
             </Label>
             <ImageView fitHeight="102.0" fitWidth="150.0" layoutX="79.0" layoutY="24.0" pickOnBounds="true">
                <image>
-                  <Image url="@../pokemon/Groudon.png" />
+                  <Image fx:id="imagen4" url="@../pokemon/Groudon.png" />
                </image></ImageView>
             <ProgressBar fx:id="barra4" layoutX="59.0" layoutY="126.0" prefHeight="18.0" prefWidth="190.0" progress="0.5" style="-fx-accent: #17FF00;" />
             <Label fx:id="vidatotal4" layoutX="47.0" layoutY="144.0" text="620" />
@@ -125,7 +125,7 @@
             </Label>
             <ImageView fitHeight="95.0" fitWidth="150.0" layoutX="74.0" layoutY="31.0" pickOnBounds="true">
                <image>
-                  <Image url="@../pokemon/IMIJ3.png" />
+                  <Image fx:id="imagen5" url="@../pokemon/IMIJ3.png" />
                </image></ImageView>
             <ProgressBar fx:id="barra5" layoutX="59.0" layoutY="126.0" prefHeight="18.0" prefWidth="190.0" progress="0.5" style="-fx-accent: #17FF00;" />
             <Label fx:id="vidatotal5" layoutX="47.0" layoutY="144.0" text="500" />
@@ -152,7 +152,7 @@
             </Label>
             <ImageView fitHeight="95.0" fitWidth="150.0" layoutX="72.0" layoutY="31.0" pickOnBounds="true">
                <image>
-                  <Image url="@../pokemon/Swampert.png" />
+                  <Image fx:id="imagen6" url="@../pokemon/Swampert.png" />
                </image></ImageView>
             <ProgressBar fx:id="barra6" layoutX="59.0" layoutY="126.0" prefHeight="18.0" prefWidth="190.0" progress="0.5" style="-fx-accent: #17FF00;" />
             <Label fx:id="vidatotal6" layoutX="47.0" layoutY="144.0" text="500" />
@@ -191,6 +191,14 @@
                </font>
             </Button>
          </children></AnchorPane>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="3">
+         <children>
+            <Button disable="true" layoutY="-1.0" mnemonicParsing="false" onMouseClicked="#Detalles" prefHeight="70.0" prefWidth="280.0" style="-fx-background-color: #4DC694;" text="Detalles" fx:id="detallesP">
+               <font>
+                  <Font size="15.0" />
+               </font></Button>
+         </children>
+      </AnchorPane>
    </children>
    <columnConstraints>
       <ColumnConstraints minWidth="280.0" prefWidth="100.0" />
@@ -200,6 +208,7 @@
    <rowConstraints>
       <RowConstraints minHeight="180.0" prefHeight="30.0" />
       <RowConstraints minHeight="180.0" prefHeight="30.0" />
+      <RowConstraints minHeight="70.0" prefHeight="30.0" />
       <RowConstraints minHeight="70.0" prefHeight="30.0" />
    </rowConstraints>
 </GridPane>
